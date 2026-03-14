@@ -1,0 +1,5 @@
+{
+  "name": "Read with Me",
+  "description": "A Duolingo-style reading app for kids aged 4-6 using voice interaction.",
+  "requestFramePermissions": ["microphone"]
+}
