@@ -1,6 +1,8 @@
 # Read-with-me-AI
 
-A gamified AI reading app for kids. Interactive reading lessons are laid out on a progress map; completing a lesson unlocks the next level.
+A voice-enabled AI reading tutor for kids. An animated teacher listens, speaks, and guides children through reading and vocabulary lessons laid out on a level map; completing a lesson unlocks the next level.
+
+**Live:** [emresenturer.github.io/Read-with-me-AI](https://emresenturer.github.io/Read-with-me-AI/) (bring your own free Gemini API key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey); it stays in your browser). Allow microphone access for the voice lessons.
 
 ## What it does
 
@@ -17,7 +19,7 @@ Prerequisites: Node.js
    ```bash
    npm install
    ```
-2. Set your Gemini API key in `.env.local`:
+2. Optionally set your Gemini API key in `.env.local` (otherwise the app asks for it):
    ```
    GEMINI_API_KEY=your-key-here
    ```
@@ -25,6 +27,10 @@ Prerequisites: Node.js
    ```bash
    npm run dev
    ```
+
+## Deploy
+
+Every push to `main` builds the app and publishes `dist/` to the `gh-pages` branch (`.github/workflows/pages.yml`).
 
 ## Stack
 
