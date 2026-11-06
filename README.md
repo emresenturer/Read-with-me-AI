@@ -6,10 +6,10 @@ A voice-enabled AI reading tutor for kids. An animated teacher listens, speaks, 
 
 ## What it does
 
-- **Level map** — lessons organized as unlockable levels
-- **Interactive lessons** — read-along experience built for young readers
-- **Progression** — finishing a lesson unlocks the next one
-- **AI-assisted** — reading support powered by the Gemini API
+- **Level map**: lessons organized as unlockable levels
+- **Interactive lessons**: read-along experience built for young readers
+- **Progression**: finishing a lesson unlocks the next one
+- **AI-assisted**: reading support powered by the Gemini API
 
 ## Run locally
 
