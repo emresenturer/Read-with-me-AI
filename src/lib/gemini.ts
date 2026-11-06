@@ -1,5 +1,6 @@
 import { GoogleGenAI, LiveServerMessage, Modality, Type } from "@google/genai";
 import { AudioRecorder, AudioStreamer } from "./audio";
+import { getApiKey } from "./apiKey";
 
 export interface LiveSessionCallbacks {
   onConnect: () => void;
@@ -21,7 +22,7 @@ export class LiveSession {
   private connectionTimeout: any;
 
   constructor(private callbacks: LiveSessionCallbacks) {
-    this.ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+    this.ai = new GoogleGenAI({ apiKey: getApiKey() });
   }
 
   async connect(systemInstruction: string) {
